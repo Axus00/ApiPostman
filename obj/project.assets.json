@@ -1168,19 +1168,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fjgt2\\.nuget\\packages\\": {}
+    "C:\\Users\\wilma\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fjgt2\\OneDrive\\Escritorio\\LuegoPago\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\wilma\\Desktop\\ApiPostman\\ApiPostman\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\fjgt2\\OneDrive\\Escritorio\\LuegoPago\\Api\\Api.csproj",
-      "packagesPath": "C:\\Users\\fjgt2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fjgt2\\OneDrive\\Escritorio\\LuegoPago\\Api\\obj\\",
+      "projectPath": "C:\\Users\\wilma\\Desktop\\ApiPostman\\ApiPostman\\Api.csproj",
+      "packagesPath": "C:\\Users\\wilma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\wilma\\Desktop\\ApiPostman\\ApiPostman\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fjgt2\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\wilma\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1198,11 +1198,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1245,7 +1240,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
