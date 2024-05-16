@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Api.Data; 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,7 +8,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//se configura la base
+builder.Services.AddDbContext<ApiBase>(options => 
+                options.UseMySql(
+                    builder.Configuration.GetConnectionString("ConnectionSql"),
+                    Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.20-mysql")));
+
+builder.Services.AddControllers();
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -35,6 +47,13 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
+//Autorizaciones
+app.UseAuthentication();
+app.UseAuthorization();
+
+//controllers
+app.MapControllers();
 
 app.Run();
 
